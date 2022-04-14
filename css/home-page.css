@@ -1,0 +1,63 @@
+.cabecalho {
+    display:flex;
+    flex-wrap:wrap;
+    background-color:  #a30d12;
+
+}
+
+.logo {
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+}
+
+.lista-menu-principal {
+    margin: 100px 50px 0 0;
+        
+
+}
+
+.itens-menu-principal {
+
+    display: inline;
+    margin: 0 0 0 50px;
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration-line: underline;
+    
+    
+}
+
+.botao-pedir {
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-style:none;
+    padding: 15px 15px 15px 50px;
+    background-color: #fecf0a;
+    border-radius: 750px;
+    color: #fff;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    font-size: 29px;
+    margin: 55px 0 115px 65px;
+}
+
+.linha-de-divisão {
+    background-color: black;
+    max-height: 15px;
+
+}
+
+.menu-secundário {
+    margin: 25px 0 25px 180px;
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.item-menu-secundario {
+    display: inline;
+    margin: 0 25px 0 25px;
+    font-weight:lighter;
+}

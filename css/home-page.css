@@ -60,7 +60,7 @@ hr {
 }
 
 .menu-secundário {
-    margin: 25px 0 25px 180px;
+    margin: 25px 0 50px 180px;
     display: flex;
     flex-wrap: wrap;
 
@@ -75,5 +75,5 @@ hr {
 
 .banner-home-page {
     display: flex;
-    width: ;
+    
 }

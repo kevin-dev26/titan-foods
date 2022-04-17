@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
     
     <title> Titan Foods | Batatas Recheadas </title>
 </head>
@@ -60,6 +62,39 @@
         </section>
     </header>
 
+    <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img id="banner1" src="img/banners/banner1.jpg" alt="Banner: Entrega Grátis até 3 Km" />
+          </li>
+          <li>
+            <img id="banner2" src="img/banners/banner2.jpg" alt="Banner: Bacon lovers seu lugar é aqui" />
+          </li>
+          <li>
+            <img id="banner3" src="img/banners/banner3.jpg" alt="Banner: Calabresa Bacon Barbecue sua melhor escoha de hoje."/>
+          </li>
+                 </ul>
+      </div>
+
 </body>
+
+<script type="text/javascript">
+    function slide1(){
+    document.getElementById('id').src="banner1.jpg";
+    setTimeout("slide2()", 2000)
+    }
+    
+    function slide2(){
+    document.getElementById('id').src="banner2.jpg";
+    setTimeout("slide3()", 2000)
+    }
+    
+    function slide3(){
+    document.getElementById('id').src="banner3.jpg";
+    setTimeout("slide1()", 2000)
+    }
+    </script>
+    <body onLoad="slide1()">
+    <img id="id">
 
 </html>

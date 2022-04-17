@@ -1,0 +1,38 @@
+.container__geral {
+    width:1170px;
+    margin:0 auto;
+}
+
+.container__formulario {
+    background-color: blue;
+    float:left;
+    width:780px;   
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.input__padrao {
+	margin: 20px 15px 0 10px;
+	padding: 15px 15px;
+	width: 40%;
+    border-radius: 25px;
+}
+
+.informacoes__usuario {
+    margin: 30px -15px 10px 10px;
+	padding: 15px 15px;
+}
+
+.mensagem {
+    margin: 10px 10px 10px 10px;
+	padding: 15px 15px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.container__informacoes {
+    background-color: blueviolet;
+    float:right;
+    width:240px;
+}

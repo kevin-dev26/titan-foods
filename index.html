@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-
+  
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
-    
+ 
     <title> Titan Foods | Batatas Recheadas </title>
 </head>
 
 <body>
+
+
+
+
     <header>
         <section class="cabecalho">
             <div class="logo">
@@ -25,12 +30,13 @@
 
             <div class="menu-principal">
 
-                <ul  class="lista-menu-principal">
+                <ul class="lista-menu-principal">
 
-                    <li class="itens-menu-principal"><a style="text-decoration: none"   href="#">Home</a></li>
-                    <li class="itens-menu-principal"><a style="text-decoration: none"  href="#">Cardápio</a></li>
-                    <li class="itens-menu-principal"><a style="text-decoration: none"  href="#">Institucional</a></li>
-                    <li class="itens-menu-principal"><a style="text-decoration: none"  href="#">Contato</a></li>
+                    <li class="itens-menu-principal"><a style="text-decoration: none" href="#">Home</a></li>
+                    <li class="itens-menu-principal"><a style="text-decoration: none" href="#">Cardápio</a></li>
+                    <li class="itens-menu-principal"><a style="text-decoration: none" href="#">Institucional</a>
+                    </li>
+                    <li class="itens-menu-principal"><a style="text-decoration: none" href="#">Contato</a></li>
 
                 </ul>
             </div>
@@ -40,7 +46,7 @@
                 <!--  Colocar um Link com dropdown duas opções Ifood e Goomer (link pro ifood e pro goomer)  -->
 
             </div>
-            
+
             <hr>
 
             <div class="menu-secundário">
@@ -62,39 +68,55 @@
         </section>
     </header>
 
-    <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img id="banner1" src="img/banners/banner1.jpg" alt="Banner: Entrega Grátis até 3 Km" />
-          </li>
-          <li>
-            <img id="banner2" src="img/banners/banner2.jpg" alt="Banner: Bacon lovers seu lugar é aqui" />
-          </li>
-          <li>
-            <img id="banner3" src="img/banners/banner3.jpg" alt="Banner: Calabresa Bacon Barbecue sua melhor escoha de hoje."/>
-          </li>
-                 </ul>
-      </div>
+    <div class="slider">
 
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+
+
+            <div class="slide first">
+                <img id="banner1" src="img/banners/banner1.jpg" alt="Banner: Entrega Grátis até 3 Km" />
+            </div>
+
+            <div class="slide">
+                <img id="banner2" src="img/banners/banner2.jpg" alt="Banner: Bacon lovers seu lugar é aqui" />
+            </div>
+
+            <div class="slide">
+                <img id="banner3" src="img/banners/banner3.jpg"
+                    alt="Banner: Calabresa Bacon Barbecue sua melhor escolha de hoje." />
+            </div>
+
+            <div class="slide">
+                <img id="banner4" src="img/banners/banner4.jpg" alt="Banner: promoções e combos incríveis " />
+            </div>
+
+            <div class="navigation-auto">
+
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
-
-<script type="text/javascript">
-    function slide1(){
-    document.getElementById('id').src="banner1.jpg";
-    setTimeout("slide2()", 2000)
-    }
-    
-    function slide2(){
-    document.getElementById('id').src="banner2.jpg";
-    setTimeout("slide3()", 2000)
-    }
-    
-    function slide3(){
-    document.getElementById('id').src="banner3.jpg";
-    setTimeout("slide1()", 2000)
-    }
-    </script>
-    <body onLoad="slide1()">
-    <img id="id">
 
 </html>

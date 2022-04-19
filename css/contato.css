@@ -4,7 +4,7 @@
 }
 
 .container__formulario {
-    background-color: blue;
+    /* background-color: blue; */
     float:left;
     width:780px;   
     display: flex;
@@ -16,6 +16,7 @@
 	margin: 20px 15px 0 10px;
 	padding: 15px 15px;
 	width: 40%;
+    border: 1px solid #ccc;
     border-radius: 25px;
 }
 
@@ -24,11 +25,17 @@
 	padding: 15px 15px;
 }
 
-.mensagem {
-    margin: 10px 10px 10px 10px;
+.input__padrao--mensagem {
+    margin: 10px;
 	padding: 15px 15px;
     width: 90%;
-    border-radius: 25px;
+    border: 1px solid #ccc;
+     border-radius: 25px;
+}
+
+.container__mensagem {
+    padding: 15px 30px;
+    width: 90%;
 }
 
 .container__informacoes {

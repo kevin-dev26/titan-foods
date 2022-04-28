@@ -15,3 +15,12 @@ function nextImage(){
   document.getElementById("radio"+count).checked = true;
 
 }
+
+// Seção Menu Lateral
+
+const botaoMenu = document.querySelector(".cabecalho-menu-lateral")
+const menu = document.querySelector(".menu-lateral")
+
+botaoMenu.addEventListener("click", () => {
+    menu.classList.toggle("menu-lateral--ativo");
+})

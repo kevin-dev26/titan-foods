@@ -1,9 +1,10 @@
+/* Seção Cabeçalho */
+
 .cabecalho {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 24px;
+    justify-content: space-between;
+    padding: 8px 16px;
     background-color: #a30d12;
 }
 
@@ -13,40 +14,85 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.cabecalho-menu-principal {
-    display: flex;
-    gap: 32px;
-} 
-
-.cabecalho-itens-menu-principal {
-    font-weight: 400;
-    font-size: 18px;
-    color: #fff;
-    align-items: center;
-    text-decoration: none;
-    margin: 30px;
+.cabecalho-menu-principal, .cabecalho-botao, .banner {
+    display: none;
 }
 
-.cabecalho-botao {
-    background-color: #ffd21c;
-    color: #fff;
-    border-radius: 30px;
-    width: 180px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.cabecalho-botao:hover {
-    background: #8c0000be;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
 
 @media screen and (min-width: 1440px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 24px;
+    }
+
+    .cabecalho-menu-principal {
+        display: flex;
+        gap: 32px;
+    }
+
+    .cabecalho-itens-menu-principal {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        align-items: center;
+        text-decoration: none;
+        margin: 30px;
+    }
+
+    .cabecalho-botao {
+        display: flex;
+        align-items: center;
+        background-color: #ffd21c;
+        color: #fff;
+        border-radius: 30px;
+        width: 180px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+    }
     
+    .cabecalho-botao:hover {
+        background: #8c0000be;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .cabecalho-menu-lateral {
+        display: none;
+    }
+
 }
 
-.menu-secundário {
+/* Seção Menu Lateral */
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffd21c;
+    width: 60vw;
+    height: 100vw;
+
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-lateral-link {
+    height: 64px;
+    color: #fff;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+
+/* .menu-secundário {
     margin: 25px 0 50px 180px;
     display: flex;
     flex-wrap: wrap;
@@ -58,4 +104,4 @@
     margin: 0 25px 0 20px;
     padding-right: 20px;
     font-weight: lighter;
-}
+} */

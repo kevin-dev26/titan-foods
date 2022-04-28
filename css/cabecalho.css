@@ -1,60 +1,43 @@
 .cabecalho {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
     background-color: #a30d12;
 }
 
-.cabecalho a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.logo {
-    margin: 50px;
+.cabecalho-logo {
+    height: 100px;
+    margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.menu-principal {
-    padding: 20px;
-    margin: 20px;
-}
+.cabecalho-menu-principal {
+    display: flex;
+    gap: 32px;
+} 
 
-.lista-menu-principal {
-    align-items: center;
-    margin: 100px 50px 0 0;
-
-
-}
-
-hr {
-    width: 90%;
+.cabecalho-itens-menu-principal {
+    font-weight: 400;
+    font-size: 18px;
     color: #fff;
     align-items: center;
-    border-radius: 5px;
-    opacity: .5;
+    text-decoration: none;
+    margin: 30px;
 }
 
-.itens-menu-principal {
-    display: inline;
-    margin: 0 0 0 50px;
-    font-weight: bold;
-    font-size: 20px;
-   
-}
-
-.botao-pedir {
-    text-align: center;
-    padding: 36px 20px 0 20px;
+.cabecalho-botao {
     background-color: #ffd21c;
-    border-radius: 50px;
-    display: flex;
-    max-width: 200px;
+    color: #fff;
+    border-radius: 30px;
+    width: 180px;
+    height: 60px;
     font-size: 20px;
     font-weight: bold;
-    margin: 100px 0 50px 50px;;
 }
 
-.botao-pedir:hover {
+.cabecalho-botao:hover {
     background: #8c0000be;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

@@ -19,7 +19,7 @@ function nextImage(){
 
 // Seção Menu Lateral
 
-const botaoMenu = document.querySelector(".cabecalho-menu-lateral")
+const botaoMenu = document.querySelector(".cabecalho-menu-lateral-botao")
 const menu = document.querySelector(".menu-lateral")
 
 botaoMenu.addEventListener("click", () => {

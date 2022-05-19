@@ -1,28 +1,26 @@
 /* Seção de Formulário */
 
 .container-geral {
-    width:1170px;
+   
+    width:100%;
     margin:0 auto;
 }
 
 .container-formulario {
     float:left;
-    width:780px;   
-    display: flex;
-    flex-wrap: wrap;
-    
+    width:50%;       
 }
 
 .input-padrao {
 	margin: 20px 15px 0 10px;
 	padding: 15px 15px;
-	width: 40%;
+	width: 75%;
     border: 1px solid #ccc;
     border-radius: 25px;
 }
 
 .informacoes-usuario {
-    margin: 30px -15px 10px 10px;
+    margin: 30px -05px 10px 10px;
 	padding: 15px 15px;
 }
 
@@ -35,6 +33,7 @@
 }
 
 .container-mensagem {
+    display: inline- block;
     padding: 15px 30px;
     width: 90%;
 }
@@ -42,12 +41,13 @@
 /* Seção de Informações */
 
 .container-informacoes {
+    display: block;
     float:right;
-    width:390px;
+    width:50%;
 }
 
-.container-informacoes h4 {
-    margin: 60px 0 30px 0;
+.container-geral h4 {
+    margin: 60px 0 30px 20px;
     font-size: 2em;
 }
 
@@ -55,7 +55,10 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
+   max-width: 350px;
+   line-height: 1.5;
 }
+
 
 .container-informacoes p {
     font-size: 15px;
@@ -65,7 +68,8 @@
 
 /* Botão */
 .botao-formulario {
-    margin: 20px 40px;
+    margin: 0 50px 70px;
+    align-items: center;
     padding: 9px;
     background: #a30d12;
 	color: white;

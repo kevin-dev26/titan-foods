@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+
+
+  .container-formulario {
+    display: block;
+    width: 100%
+  }
+
+  .container-informacoes {
+    display: block;
+    width: 75%;
+    padding: 25px;
+    float: none;
+
+
+  }
+}
